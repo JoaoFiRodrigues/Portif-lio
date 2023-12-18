@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One &família= Montserrat:wght@400;600 & display=swap');
+@import url(../estilos/projetos.css);
+
+:root {
+    --branco: #ffffff;
+    --cor-primaria: #FFEFD5;
+    --cor-secundaria: #2F4F4F;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #3F4E4F;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 1.3em 0% 1.3em 12%;
+    background-color: var(--cor-hover);
+    padding: 5%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 2.5em;
+    justify-content: center;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 2.5em 0;
+    gap: 4em;
+}
+
+.apresentacao__conteudo {
+    width: auto;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.2em;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+    text-align: start;
+    margin: 0 1em;
+}
+
+.apresentacao__conteudo__titulo2 {
+    font-size: 2.125rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin: 0 0.5em;
+}
+
+.apresentacao__conteudo__texto2 {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    margin: 0 1em;
+    font-style: italic;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    height: 2%;
+    text-align: center;
+    border-radius: 8em;
+    font-weight: 600;
+    font-size: 1.187rem;
+    padding: 1em 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    box-shadow: 0em 0em 2em 0em #3F4E4F;
+    border-radius: 2em;
+    width: 60%;
+}
+
+.rodape {
+    padding: 2em;
+    color: var(--cor-hover);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: auto;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        padding: 1.5em 0;
+    }
+
+    .apresentacao {
+        flex-direction: row;
+        gap: 2em;
+        padding: 3em 2em;
+    }
+
+    .apresentacao__conteudo__titulo2 {
+        text-align: center;
+    }
+
+    .apresentacao__imagem {
+        margin: 5em 0;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        padding: 2em 0;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.5em;
+    }
+
+    .apresentacao__imagem {
+        width: 40%;
+        margin: 0;
+    }
+
+    .apresentacao__conteudo__titulo2 {
+        font-size: 3em;
+    }
+
+    .apresentacao__conteudo__texto2 {
+        font-size: 1.5em;
+        margin: 1em 0;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.7em;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 3em;
+    }
+
+
+    .rodape {
+        font-size: 1em;
+    }
+}
